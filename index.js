@@ -56,4 +56,4 @@ app.post('/instagram', function(req, res) {
   received_updates.unshift(req.body);
   res.sendStatus(200);
 });
-app.listen();
+app.listen(8080);
