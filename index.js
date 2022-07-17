@@ -28,7 +28,7 @@ app.get('/', function(req, res) {
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
 
-app.get('/Webhook', function(req, res) {
+app.get('/webhooks', function(req, res) {
   res.render('webhook')
 });
 
