@@ -1,12 +1,17 @@
 {
-  "name": "simple-nodejs-server",
+  "name": "twitter-chat-bot",
   "version": "1.0.0",
-  "description": "Simple Node.js Server",
-  "main": "server.js",
+  "description": "chat-bot for business clients account",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aline Bastos",
-  "license": "ISC"
+  "author": "Mohammad Zainulla",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "twitter-autohook": "^1.7.2"
+  }
 }

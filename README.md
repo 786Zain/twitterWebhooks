@@ -1,10 +1,19 @@
-## Simple Node.js Server
+# Twitter Chat-Bot Integration
 
-How to create a simple Node.js server:
+    An Twitter App connectivity code to perform Tweet, Likes, comments, replies and Direct Messages operations
 
-- You need Node.js to be installed on your system. You can download Node.js and follow the instructions on how to do that on [nodejs.org](http://nodejs.org/);
-- Clone or download this repository;
-- Open your terminal;
-- With the command line go to the folder you just cloned/downloaded;
-- Type 'npm start', so your server start running;
-- Go to the browser and access http://127.0.0.1:1337/.
+## Installation
+    Download Node v16
+    npm install 
+    npm start
+
+## Setup
+
+## Run
+    Console Output
+    Getting webhooks…
+    Removing webhooks…
+    Removing https://b6bd-122-172-145-45.ngrok.io/webhook…
+    Registering https://80ab-122-171-105-175.ngrok.io/webhook as a new webhook…
+    Webhook created.
+    Subscribed to zainDeveloper7's activities.
