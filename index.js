@@ -29,7 +29,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/webhooks', function(req, res) {
-  res.render('webhook')
+  res.render('webhook',{query : req.query})
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
