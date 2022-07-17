@@ -12,6 +12,9 @@ var app = express();
 var xhub = require('express-x-hub');
 
 app.set('port', (process.env.PORT || 5000));
+app.set('views', __dirname + '/views')
+app.set('view engine', 'ejs')
+
 app.listen(app.get('port'));
 
 app.use(xhub({ algorithm: 'sha1', secret: process.env.APP_SECRET }));
@@ -23,6 +26,10 @@ var received_updates = [];
 app.get('/', function(req, res) {
   console.log(req);
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
+});
+
+app.get('/Webhook', function(req, res) {
+  res.render('webhook')
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
